@@ -4,7 +4,18 @@ Use webpack to bundle JavaScript.
 
 ## Build with
 
-HTML CSS Javascript, webpack, gitflow
+- HTML
+- CSS
+- Javascript,
+- webpack,
+- gitflow
+
+## Milestones
+
+- Milestone 1: basic page structure.
+- Milestone 2: send and receive data from API.
+- Milestone 3: final touches.
+
 
 ## Live Demo
 

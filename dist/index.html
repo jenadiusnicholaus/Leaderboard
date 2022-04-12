@@ -3,10 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
-<script defer src="/index.bundle.js"></script><script defer src="/print.bundle.js"></script></head>
+    <title>Leader board website</title>
+<script defer src="/index.bundle.js"></script></head>
 <body>
-    <h1>Hello leader board website!</h1>
-    
+   <header>
+       <nav><h1>Leaderboard</h1></nav>
+   </header>
+
+   <main>
+       <section class="grid container">
+           <h2 hidden>hidden</h2>
+           <div class="flex-d-col ">
+               <div class="flex-d-row recent-st-btn">
+                   <p>Recent scores</p>
+                   <button type="button" class="refresh">refresh</button>
+               </div>
+               <ul class = "scores">
+                   <li class="flex-d-row score"><span> Name</span> <span>100</span></li>
+                   <li class="flex-d-row score"><span> Name</span> <span>20</span></li>
+                   <li class="flex-d-row score"><span> Name</span> <span>50</span></li>
+                   <li class="flex-d-row score"><span> Name</span> <span>78</span></li>
+                   <li class="flex-d-row score"><span> Name</span> <span>78</span></li>
+                   <li class="flex-d-row score"><span> Name</span> <span>77</span></li>
+                   <li class="flex-d-row score"><span> Name</span> <span>128</span></li>
+                   <li class="flex-d-row score"><span> Name</span> <span>42</span></li>
+                </ul>
+            </div>
+
+            <div class="flex-d-col" >
+                <p>Add your score</p>
+                <form class="flex-d-col" action="#" >
+                    <input type="text" name="name" placeholder="Your name">
+                    <input type="text" name="score" placeholder="Your score">
+                    <div class="btn-area">
+                        <button  type="submit" class="refresh">submit</button>
+                    </div>
+                </form>
+            </div>
+       </section>
+   </main>
 </body>
 </html>

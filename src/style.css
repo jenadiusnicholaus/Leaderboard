@@ -1,7 +1,94 @@
-.hello {
-  color: red;
+body {
+  font-family: cursive;
+  width: 100%;
 }
 
-body {
-  background-color: bisque;
+p {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+nav {
+  margin-left: 10%;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container {
+  margin: 0 100px 100px 50px;
+  width: 70%;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 33px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.flex-d-row {
+  display: flex;
+  flex-direction: row;
+}
+
+div.flex-d-row {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-d-col {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  border: 2px  solid black;
+  border-bottom-width: 5px;
+  border-right-width: 5px;
+}
+
+.scores {
+  margin-top: 2px;
+  border: 3px solid black;
+  padding-top: 2px;
+  padding-left: 5px;
+}
+
+.scores li {
+  padding: 3px;
+}
+
+li.flex-d-row {
+  justify-content: start;
+}
+
+li span {
+  margin-right: 10px;
+}
+
+.scores li:nth-child(even) {
+  background: rgb(238, 234, 234);
+}
+
+.btn-area {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+input[type=text] {
+  border: 3px solid;
+  margin-bottom: 24px;
+  padding: 8px;
+  text-align: start;
+  justify-content: center;
 }

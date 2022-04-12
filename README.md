@@ -1,4 +1,4 @@
-# Leader Board webdite
+# Leader Board website
 
 Use webpack to bundle JavaScript.
 
@@ -14,9 +14,21 @@ HTML CSS Javascript, webpack, gitflow
 
 To get a local copy up and running follow these simple example steps.
 
-```git
- git clone git+https://github.com/jenadiusnicholaus/work-with-webpack.git
- 
+```node
+ ==Type  these command in terminal to get started== 
+
+ git clone https://github.com/jenadiusnicholaus/Leaderboard.git
+
+ cd Leaderboard
+
+ ==install the dependences==
+
+ run: npm install
+
+ ==run the app by typing in the terminal==
+
+  run: npm start
+
 ```
 
 ## Screenshot of the project

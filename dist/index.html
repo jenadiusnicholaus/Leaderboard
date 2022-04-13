@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leader board website</title>
-<script defer src="/index.bundle.js"></script></head>
+       <title>Leader board website</title>
+<script defer src="/index.bundle.js"></script><script defer src="/apicall.bundle.js"></script><script defer src="/utils.bundle.js"></script><script defer src="/leaderBoard.bundle.js"></script></head>
 <body>
    <header>
        <nav><h1>Leaderboard</h1></nav>
@@ -16,31 +16,29 @@
            <div class="flex-d-col ">
                <div class="flex-d-row recent-st-btn">
                    <p>Recent scores</p>
-                   <button type="button" class="refresh">refresh</button>
+                   <button id="refresh" type="button" class="refresh">refresh 
+                    <span  id="loading" class="loading loading--full-height"></span>
+                </button>
                </div>
+               <small class="first-alert">No record for now , Create One 🎲 </small>
                <ul class = "scores">
-                   <li class="flex-d-row score"><span> Name</span> <span>100</span></li>
-                   <li class="flex-d-row score"><span> Name</span> <span>20</span></li>
-                   <li class="flex-d-row score"><span> Name</span> <span>50</span></li>
-                   <li class="flex-d-row score"><span> Name</span> <span>78</span></li>
-                   <li class="flex-d-row score"><span> Name</span> <span>78</span></li>
-                   <li class="flex-d-row score"><span> Name</span> <span>77</span></li>
-                   <li class="flex-d-row score"><span> Name</span> <span>128</span></li>
-                   <li class="flex-d-row score"><span> Name</span> <span>42</span></li>
                 </ul>
             </div>
 
             <div class="flex-d-col" >
                 <p>Add your score</p>
                 <form class="flex-d-col" action="#" >
-                    <input type="text" name="name" placeholder="Your name">
-                    <input type="text" name="score" placeholder="Your score">
+                    <input type="text" id="user" name="name" placeholder="Your name">
+                    <input type="text" id = "score" name="score" placeholder="Your score">
                     <div class="btn-area">
-                        <button  type="submit" class="refresh">submit</button>
+                        <button  type="button" class="submit">submit</button>
+                        
                     </div>
+                    <span  class="message"></span>
                 </form>
             </div>
        </section>
+      
    </main>
 </body>
 </html>

@@ -6,6 +6,9 @@ module.exports = {
 
   entry: {
     index: './src/index.js',
+    apicall: './src/Apicall.js',
+    utils: './src/utils.js',
+    leaderBoard: '/src/LeaderBoard.js',
 
   },
 

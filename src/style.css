@@ -6,14 +6,26 @@ body {
 p {
   font-weight: bold;
   font-size: 24px;
+  color: rgb(114, 112, 112);
 }
 
 h1 {
   font-size: 34px;
+  color: rgb(114, 112, 112);
 }
 
 nav {
+  display: flex;
   margin-left: 10%;
+  align-items: center;
+}
+
+nav svg {
+  color: pink;
+  top: 40px;
+  left: 11.63vw;
+  position: absolute;
+  z-index: 1;
 }
 
 main {
@@ -23,8 +35,10 @@ main {
 }
 
 .container {
-  margin: 0 100px 100px 50px;
-  width: 70%;
+  margin: 20px 100px 100px 50px;
+  width: 60%;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0 -23px 25px 0 inset, rgba(0, 0, 0, 0.15) 0 -36px 30px 0 inset, rgba(0, 0, 0, 0.1) 0 -79px 40px 0 inset, rgba(0, 0, 0, 0.06) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px, rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(0, 0, 0, 0.09) 0 32px 16px;
 }
 
 .grid {
@@ -51,16 +65,20 @@ div.flex-d-row {
 button {
   width: 100px;
   height: 30px;
-  border: 2px  solid black;
-  border-bottom-width: 5px;
-  border-right-width: 5px;
+  border: 1px solid rgb(189, 185, 185);
+  background-color: rgb(230, 222, 222);
+  border-radius: 5px;
   cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid rgb(114, 112, 112);
 }
 
 .scores {
   height: 100%;
   margin-top: 2px;
-  border: 3px solid black;
+  border: 1px solid rgb(222, 222, 222);
   padding-top: 2px;
   padding-left: 5px;
 }
@@ -88,11 +106,16 @@ li span {
 }
 
 input[type=text] {
-  border: 3px solid;
+  border: 1px solid rgb(222, 222, 222);
   margin-bottom: 24px;
   padding: 8px;
   text-align: start;
   justify-content: center;
+}
+
+input[type=text]:focus {
+  outline: none;
+  border: 1px solid rgb(222, 222, 222);
 }
 
 button.refresh {
@@ -142,4 +165,15 @@ button.refresh {
 
 .first-alert {
   display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    margin: 10px 10px 100px 10px;
+  }
 }

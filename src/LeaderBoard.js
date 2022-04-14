@@ -44,7 +44,7 @@ export default class Leaderboad {
       if (!Utilities.isEmpty(user) && !Utilities.isEmpty(score)) {
         smsel.style.display = 'inline';
         smsel.style.color = 'red';
-        smsel.textContent = 'Field can\'t empty';
+        smsel.textContent = 'Fields can\'t empty';
       } else {
         smsel.style.display = 'inline';
         smsel.style.color = 'green';

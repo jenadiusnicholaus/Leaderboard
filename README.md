@@ -1,6 +1,6 @@
 # Leader Board website
 
-Use webpack to bundle JavaScript.
+The leaderboard website displays scores submitted by different players, it meant a play gets unique id for the Game session and from there can be allowed to play the game and to do that i used  Leaderboard API using JavaScript async and await and add simple styling.
 
 ## Build with
 
@@ -44,7 +44,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Screenshot of the project
 
-<img width="1268" alt="Screen Shot 2022-03-23 at 20 05 47" src="./src/leaderBoard.png">
+<img width="1268" alt="Screen Shot 2022-04-14 at 20 05 47" src="./src/leaderBoard.png">
 
 👤 **Author1**
 
@@ -55,6 +55,17 @@ To get a local copy up and running follow these simple example steps.
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!s
+
+## Acknowledgments
+
+- Microverse
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
 
 Feel free to check the [issues page](../../issues/).
 

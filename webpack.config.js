@@ -6,7 +6,7 @@ module.exports = {
 
   entry: {
     mainjsfile: './src/index.js',
-    
+
   },
 
   devServer: {

@@ -16,10 +16,9 @@ The leaderboard website displays scores submitted by different players, it meant
 - Milestone 2: send and receive data from API.
 - Milestone 3: final touches.
 
-
 ## Live Demo
 
-[link to Leader Board webdite]()
+[link to Leader Board webdite](https://jenadiusnicholaus.github.io/Leaderboard/)
 
 ## Getting started
 

@@ -5,10 +5,7 @@ module.exports = {
   mode: 'development',
 
   entry: {
-    index: './src/index.js',
-    apicall: './src/Apicall.js',
-    utils: './src/utils.js',
-    leaderBoard: '/src/LeaderBoard.js',
+    mainjsfile: './src/index.js',
 
   },
 
@@ -27,7 +24,7 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    publicPath: '/',
+    // publicPath: 'auto',
 
   },
 

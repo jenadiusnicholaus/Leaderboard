@@ -3,10 +3,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  
+
   entry: {
     index: './src/index.js',
-    print: './src/print.js',
+    apicall: './src/Apicall.js',
+    utils: './src/utils.js',
+    leaderBoard: '/src/LeaderBoard.js',
+
   },
 
   devServer: {
@@ -33,6 +36,11 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
+      },
+
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
   },

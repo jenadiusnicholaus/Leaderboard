@@ -1,26 +1,17 @@
-import _ from 'lodash';
-import printMe from './print.js';
 import './style.css';
+import Utilities from './utils.js';
+import Leaderboad from './LeaderBoard.js';
 
-function component() {
-  const element = document.createElement('div');
-  const btn = document.createElement('button');
+const refreshBtn = document.querySelector('.refresh');
+const submitBtn = document.querySelector('.submit');
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = printMe;
-  element.classList.add('hello');
-  element.appendChild(btn);
+// refresh
+Leaderboad.refresh(refreshBtn);
 
-  return element;
-}
+// create game name
+Leaderboad.createLeaderBoard(submitBtn);
 
-document.body.appendChild(component());
-
-if (module.hot) {
-  module.hot.accept('./print.js', () => {
-    // console.log('Accepting the updated printMe module!');
-    printMe();
-  });
-}
+window.addEventListener('load', async () => {
+  const id = Utilities.getFromLocalstorage('gamekey');
+  await Leaderboad.render(id);
+});
